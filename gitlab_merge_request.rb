@@ -29,7 +29,7 @@ module Argos
     end
 
     def print_merge_request_item(merge_request)
-      puts "--#{merge_request.source_branch} | bash='chromium #{merge_request.web_url}'"
+      puts "--#{merge_request.source_branch} | bash='chromium #{merge_request.web_url}' terminal=false"
     end
 
     def pipeline_icon(pipeline)
